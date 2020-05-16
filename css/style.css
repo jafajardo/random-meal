@@ -1,0 +1,153 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Showcase Styles */
+#showcase {
+  background: url("/img/showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+#showcase .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 2;
+}
+
+#showcase .container h1 {
+  padding-bottom: 1.5rem;
+  font-size: 4rem;
+}
+
+#showcase .container .btn {
+  border: 1px solid #fff;
+  padding: 0.7rem 1.5rem;
+}
+
+#showcase .container .btn:hover {
+  font-weight: 500;
+}
+
+/* Features Styles */
+#features {
+  background: #dadada;
+}
+
+#features .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #5c5c5c;
+}
+
+#features .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#features .container .fresh-meal,
+#features .container .everyday,
+#features .container .online {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#features .container .fresh-meal > div,
+#features .container .everyday > div,
+#features .container .online > div {
+  padding: 5rem 0rem 1.5rem;
+}
+
+#features .container .fresh-meal h2,
+#features .container .everyday h2,
+#features .container .online h2 {
+  padding-bottom: 1.5rem;
+}
+
+#features .container .fresh-meal p,
+#features .container .everyday p,
+#features .container .online p {
+  padding-bottom: 5rem;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #a0cec7;
+}
+
+footer .footer-upper {
+  width: 100%;
+}
+
+footer .footer-upper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 0rem;
+}
+
+footer .footer-upper .footer-text {
+  width: 400px;
+  justify-self: end;
+}
+
+footer .footer-upper .footer-links {
+  justify-self: center;
+}
+
+footer .footer-upper .footer-links a {
+  transition: all 400ms ease;
+}
+
+footer .footer-upper .footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-lower {
+  padding: 3rem 0rem;
+}
