@@ -40,7 +40,7 @@ ul {
 
 /* Showcase Styles */
 #showcase {
-  background: url("/img/showcase.jpg");
+  background: url("../img/showcase.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
