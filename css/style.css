@@ -34,6 +34,10 @@ ul {
   list-style: none;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 /* Showcase Styles */
 #showcase {
   background: url("/img/showcase.jpg");
@@ -80,13 +84,11 @@ ul {
 }
 
 #features .container {
-  max-width: 1000px;
+  max-width: 80%;
   margin: auto;
 }
 
-#features .container .fresh-meal,
-#features .container .everyday,
-#features .container .online {
+#features .container .features-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,22 +96,16 @@ ul {
   text-align: center;
 }
 
-#features .container .fresh-meal > div,
-#features .container .everyday > div,
-#features .container .online > div {
-  padding: 5rem 0rem 1.5rem;
+#features .container .features-box > div {
+  padding: 4rem 0rem 1.5rem;
 }
 
-#features .container .fresh-meal h2,
-#features .container .everyday h2,
-#features .container .online h2 {
-  padding-bottom: 1.5rem;
+#features .container .features-box h2 {
+  padding: 0rem 1rem 1.5rem;
 }
 
-#features .container .fresh-meal p,
-#features .container .everyday p,
-#features .container .online p {
-  padding-bottom: 5rem;
+#features .container .features-box p {
+  padding: 0rem 2.5rem 5rem;
 }
 
 /* Footer Styles */
@@ -119,6 +115,11 @@ footer {
   justify-content: center;
   align-items: center;
   background: #a0cec7;
+}
+
+footer .container {
+  max-width: 900px;
+  margin: auto;
 }
 
 footer .footer-upper {
@@ -132,7 +133,6 @@ footer .footer-upper {
 }
 
 footer .footer-upper .footer-text {
-  width: 400px;
   justify-self: end;
 }
 
@@ -150,4 +150,56 @@ footer .footer-upper .footer-links a:hover {
 
 footer .footer-lower {
   padding: 3rem 0rem;
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  footer .footer-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+  }
+
+  footer .footer-upper .footer-text {
+    max-width: 400px;
+    padding: 0rem 3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #showcase .container {
+    text-align: center;
+  }
+
+  #showcase .container h1 {
+    font-size: 30px;
+  }
+
+  #features .container {
+    flex-direction: column;
+    max-width: 85%;
+  }
+
+  #features .container .features-box > div {
+    padding-top: 3rem;
+  }
+
+  #features .container .features-box p {
+    padding-bottom: 3rem;
+  }
+
+  footer .footer-upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .footer-upper .footer-text {
+    padding-bottom: 2.5rem;
+  }
 }
