@@ -38,6 +38,16 @@ ul {
   overflow-x: hidden;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 0;
+}
+
 /* Showcase Styles */
 #showcase {
   background: url("../img/showcase.jpg");
@@ -53,17 +63,18 @@ ul {
   justify-content: center;
   align-items: center;
   height: 100%;
-  z-index: 2;
 }
 
 #showcase .container h1 {
   padding-bottom: 1.5rem;
   font-size: 4rem;
+  z-index: 2;
 }
 
 #showcase .container .btn {
   border: 1px solid #fff;
   padding: 0.7rem 1.5rem;
+  z-index: 2;
 }
 
 #showcase .container .btn:hover {
@@ -81,9 +92,6 @@ ul {
   justify-content: center;
   align-items: center;
   color: #5c5c5c;
-}
-
-#features .container {
   max-width: 80%;
   margin: auto;
 }
@@ -120,10 +128,6 @@ footer {
 footer .container {
   max-width: 900px;
   margin: auto;
-}
-
-footer .footer-upper {
-  width: 100%;
 }
 
 footer .footer-upper {
